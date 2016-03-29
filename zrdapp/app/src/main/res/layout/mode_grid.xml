@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zrodo="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgreen">
+
+    <com.app.widget.ZrodoHeaderView
+        android:id="@id/head"
+        style="?attr/zrodoHeadViewStyle"
+        zrodo:left_btn_text=""
+        zrodo:middle_text="佛山菜篮子产品安全监测系统"
+        zrodo:right_btn_text="" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/head"
+        android:gravity="center">
+
+        <GridView
+            android:id="@+id/gridView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:columnWidth="100dp"
+            android:gravity="center"
+            android:horizontalSpacing="0dp"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="50dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:zrodo="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:id="@+id/info_query_linear"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/lightgreen">
+
+    <com.app.widget.ZrodoHeaderView
+            android:id="@id/head"
+            style="?attr/zrodoHeadViewStyle"
+            zrodo:left_btn_text="返  回"
+            zrodo:middle_text="信息查询"
+            zrodo:right_btn_text=""/>
+
+    <LinearLayout
+            android:id="@+id/info_qurey_linear"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+        <com.app.widget.ClearEditText
+                android:id="@+id/query_edit"
+                android:singleLine="true"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:drawableRight="@drawable/clear_normal_list"
+                android:drawableLeft="@drawable/find"
+                android:hint="请输入检疫证号"/>
+
+        <Button
+                android:id="@+id/query_button"
+                android:layout_height="match_parent"
+                style="@style/queryButtonStyle"
+                android:layout_marginLeft="10dp"
+                android:text="查  询"
+                android:background="@drawable/btn_click_background"
+                android:onClick="queryInfo"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/query_content_linear"
+            android:layout_height="300dp"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            android:background="@color/zrodoblue">
+
+        <LinearLayout
+                android:id="@+id/info_query_single_linear1"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="10dp">
+
+            <TextView
+                    android:id="@+id/info_name"
+                    android:text="来源单位："
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"/>
+
+            <TextView
+                    android:id="@+id/info_lydw"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/info_query_single_linear2"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="10dp">
+
+            <TextView
+                    android:id="@+id/info_time"
+                    android:text="发证时间："
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"/>
+
+            <TextView
+                    android:id="@+id/info_fzsj"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="20dp"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:id="@+id/info_query_single_linear3"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="10dp">
+
+            <TextView
+                    android:id="@+id/info_code"
+                    android:text="检疫证号："
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"/>
+
+            <TextView
+                    android:id="@+id/info_jyzh"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/info_query_single_linear4"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="10dp">
+
+            <TextView
+                    android:id="@+id/info_source"
+                    android:text="产地来源："
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"/>
+
+            <TextView
+                    android:id="@+id/info_cdly"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/info_query_single_linear"
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="10dp">
+
+            <TextView
+                    android:id="@+id/info_dep"
+                    android:text="发证单位："
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginLeft="20dp"/>
+
+            <TextView
+                    android:id="@+id/info_fzdw"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_height="match_parent"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginRight="20dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

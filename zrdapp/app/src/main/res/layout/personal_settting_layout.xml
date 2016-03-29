@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:zrodo="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/lightgreen">
+
+    <com.app.widget.ZrodoHeaderView
+            android:id="@id/head"
+            style="?attr/zrodoHeadViewStyle"
+            zrodo:left_btn_text="返  回"
+            zrodo:middle_text="个人设置"
+            zrodo:right_btn_text="确定"/>
+
+    <LinearLayout
+            android:id="@+id/setting_content_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+        <LinearLayout
+                android:id="@+id/setting_expandview_linear"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+            <ExpandableListView
+                    android:id="@+id/setting_expand_listview"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:divider="#BA55D3"
+                    android:listSelector="@color/yellow"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/fragment_content"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@color/zrodoblue"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

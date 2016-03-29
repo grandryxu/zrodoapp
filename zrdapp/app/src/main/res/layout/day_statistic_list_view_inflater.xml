@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TextView
+            style="@style/data_statistic_listview_content_style"
+            android:id="@+id/detect_station"/>
+
+    <TextView
+            style="@style/data_statistic_listview_content_style"
+            android:id="@+id/ke_lun_te_luo"/>
+
+    <TextView
+            style="@style/data_statistic_listview_content_style"
+            android:id="@+id/lai_ke_duo_ba_an"/>
+
+    <TextView
+            style="@style/data_statistic_listview_content_style"
+            android:id="@+id/sha_ding_an_chun"/>
+
+    <TextView
+            style="@style/data_statistic_listview_content_style"
+            android:id="@+id/total"/>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:zrodo="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/lightgreen">
+<com.app.widget.ZrodoHeaderView
+              android:id="@id/head"
+              style="?attr/zrodoHeadViewStyle"
+              zrodo:left_btn_text="返  回"
+              zrodo:middle_text="佛山菜篮子安全监测系统"
+              zrodo:right_btn_text=""/>
+
+<android.support.v4.view.ViewPager android:id="@+id/viewpager"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:overScrollMode="never"/>
+
+
+</LinearLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:background="@color/white">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent">
+
+        <TextView
+                android:id="@+id/warning_time"
+                android:text="预警时间:"
+                style="@style/dataWarningResultStyle"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"/>
+
+        <TextView
+                android:id="@+id/warning_time_value"
+                style="@style/dataWarningResultStyle"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginRight="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent">
+
+        <TextView
+                android:id="@+id/warning_area"
+                android:text="预警区域:"
+                style="@style/dataWarningResultStyle"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"/>
+
+        <TextView
+                android:id="@+id/warning_area_value"
+                style="@style/dataWarningResultStyle"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginRight="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent">
+
+        <TextView
+                android:id="@+id/detect_station"
+                android:text="检测站点:"
+                style="@style/dataWarningResultStyle"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"/>
+
+        <TextView
+                android:id="@+id/detect_station_value"
+                style="@style/dataWarningResultStyle"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginRight="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent">
+
+        <TextView
+                android:id="@+id/detec_employee"
+                android:text="检测师 :"
+                style="@style/dataWarningResultStyle"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"/>
+
+        <TextView
+                android:id="@+id/detec_employee_value"
+                style="@style/dataWarningResultStyle"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginRight="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent">
+
+        <TextView
+                android:id="@+id/detect_item"
+                android:text="检测项目"
+                style="@style/dataWarningResultStyle"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"/>
+
+        <TextView
+                android:id="@+id/detect_item_value"
+                style="@style/dataWarningResultStyle"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginRight="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent">
+
+        <TextView
+                android:id="@+id/detect_result"
+                android:text="检测结果"
+                style="@style/dataWarningResultStyle"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"/>
+
+        <TextView
+                android:id="@+id/detect_result_value"
+                style="@style/dataWarningResultStyle"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginRight="20dp"/>
+    </LinearLayout>
+
+</LinearLayout>

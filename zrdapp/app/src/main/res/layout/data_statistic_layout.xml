@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ScrollView
+            android:id="@+id/data_statistic_scroll"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+        <LinearLayout
+                android:id="@+id/data_statistic_scroll_linear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:id="@+id/data_statistic_linear"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical">
+
+                <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    <TextView
+                            style="@style/data_statistic_listview_header_style"
+                            android:text="站点"/>
+
+                    <TextView
+                            style="@style/data_statistic_listview_header_style"
+                            android:text="莱克多巴胺"/>
+
+                    <TextView
+                            style="@style/data_statistic_listview_header_style"
+                            android:text="克伦特罗"/>
+
+                    <TextView
+                            style="@style/data_statistic_listview_header_style"
+                            android:text="沙丁胺醇"/>
+
+                    <TextView
+                            style="@style/data_statistic_listview_header_style"
+                            android:text="合计"/>
+
+                </TableRow>
+
+                <com.app.widget.ZrodoDataStatisticListView
+                        android:id="@+id/data_statistic_listview"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:divider="#e6e6e6"
+                        android:dividerHeight="1dp"
+                        android:background="@color/white"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                    android:id="@+id/circle_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:layout_marginTop="5dp"/>
+
+
+            <LinearLayout
+                    android:id="@+id/column_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:layout_marginTop="5dp"
+                    android:visibility="gone"/>
+
+
+            <LinearLayout
+                    android:id="@+id/line_chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    android:visibility="gone"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

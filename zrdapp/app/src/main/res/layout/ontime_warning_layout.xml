@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/lightgreen">
+
+    <ScrollView
+            android:id="@+id/ontime_warning_scroll"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+        <LinearLayout
+                android:id="@+id/ontime_warning_scroll_linear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

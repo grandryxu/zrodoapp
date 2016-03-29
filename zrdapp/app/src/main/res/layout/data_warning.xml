@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:zrodo="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/lightgreen">
+
+    <com.app.widget.ZrodoHeaderView
+            android:id="@id/head"
+            style="?attr/zrodoHeadViewStyle"
+            zrodo:middle_text="数据预警"
+            zrodo:left_btn_text="返回"
+            zrodo:right_btn_text=""
+            />
+
+    <com.app.widget.TabHeader
+            android:id="@+id/tab_head"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:background="@android:color/white"
+            zrodo:tabNum="Two"
+            zrodo:first_btn_text="实时预警"
+            zrodo:second_btn_text="历史预警"/>
+
+    <com.app.widget.ZrodoViewPager
+            android:id="@+id/data_warning_viewpager"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"/>
+
+
+</LinearLayout>

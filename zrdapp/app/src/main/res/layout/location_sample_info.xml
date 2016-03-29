@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/sample_info_parent">
+
+    <TextView
+        style="@style/picSampleTxtStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="样本名称" />
+
+    <com.app.widget.ClearEditText
+        style="@style/picSampleTxtStyle"
+        android:id="@+id/pic_sample_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:drawableRight="@drawable/clear_normal_list"
+        android:hint="样本名称"
+        android:singleLine="true" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        style="@style/picSampleTxtStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="样本编号" />
+
+    <com.app.widget.ClearEditText
+        style="@style/picSampleTxtStyle"
+        android:id="@+id/pic_sample_id"
+        android:enabled="false"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        style="@style/picSampleTxtStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="样本来源" />
+
+    <com.app.widget.ClearEditText
+        style="@style/picSampleTxtStyle"
+        android:id="@+id/pic_sample_source"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:drawableRight="@drawable/clear_normal_list"
+        android:hint="样本来源"
+        android:singleLine="true" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        style="@style/picSampleTxtStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="采样时间" />
+
+    <com.app.widget.ClearEditText
+        style="@style/picSampleTxtStyle"
+        android:id="@+id/sample_time"
+        android:enabled="false"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        style="@style/picSampleTxtStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="环境温度(℃)" />
+
+    <com.app.widget.ClearEditText
+        style="@style/picSampleTxtStyle"
+        android:id="@+id/sample_temperature"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="number|numberDecimal"
+        android:drawableRight="@drawable/clear_normal_list"
+        android:hint="环境温度"
+        />
+
+</LinearLayout>
